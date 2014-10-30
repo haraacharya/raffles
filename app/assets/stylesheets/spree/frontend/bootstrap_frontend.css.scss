@@ -1,6 +1,7 @@
 //Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
 
-$icon-font-path: "/assets/";
+$icon-font-path: "../../bootstrap/";
+@import "bootstrap";
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
@@ -23,9 +24,6 @@ $icon-font-path: "/assets/";
       background:rgba(9, 22, 33, 0.4);
     }
   }
-  .active {
-    background:rgba(9, 22, 33, 0.4);
-  }
   .navbar {
     border: 0;
     margin-bottom: 0;
@@ -43,6 +41,7 @@ $icon-font-path: "/assets/";
 //TODO, bug #6
 .alert-error, .alert-registration_error { @extend .alert-danger; }
 .alert-alert { @extend .alert-info; }
+.alert-notice { @extend .alert-info; }
 
 .product-body {
   height: 170px;
